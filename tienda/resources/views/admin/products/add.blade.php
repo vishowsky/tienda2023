@@ -55,9 +55,16 @@
                 </div>
 
                 <div class="col-md-3">
-                    <label for="price">En oferta?</label>
+                    <label for="indiscount">En oferta?</label>
                     <div class="input-group">
                         {!! Form::select('indiscount', ['0' => 'No', '1' => 'Si'],0, ['class' => 'custom-select'])!!}
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="discount">Descuento</label>
+                    <div class="input-group">
+                        {!! Form::number('discount',0, ['class' => 'custom-select'])!!}
                     </div>
                 </div>
 
@@ -66,7 +73,7 @@
                 <div class="row mt16">
                     <div class="col-md-12">
                         <label for="content">Descripcion</label>
-                        {!! Form::textarea('content',null, ['class'=>'form-control'] )!!}
+                        {!! Form::textarea('content',null, ['class'=>'form-control','id'=>'editor'] )!!}
                     </div>
                 </div>
                 {!!Form::close() !!}
