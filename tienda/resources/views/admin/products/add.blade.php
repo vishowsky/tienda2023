@@ -34,7 +34,15 @@
                     </div>
                     </div>
                     <div class="col-md-3">
-                        <label for="name">Categoria:</label>
+                        <label for="category">Categoria:</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="far fa-keyboard"></i>
+                                </span>
+                            </div>
+                            {!! Form::select('category', $cats, 0, ['class' => 'custom-select'])!!}
+                        </div>
                     </div>
 
                     <div class="col-md-3">
@@ -76,6 +84,13 @@
                         {!! Form::textarea('content',null, ['class'=>'form-control','id'=>'editor'] )!!}
                     </div>
                 </div>
+
+                <div class="row mt16">
+                    <div class="col-md-12">
+                        {!! Form::submit('Guardar', ['class' => 'btn btn-success']) !!}
+                    </div>
+                </div>
+
                 {!!Form::close() !!}
             </div>
         </div>         

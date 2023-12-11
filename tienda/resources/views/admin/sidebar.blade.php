@@ -25,6 +25,9 @@
                 <a href="{{ url('/admin/products') }}">Productos</a>
             </li>
             <li>
+                <a href="{{ url('/admin/categories/0') }}">Categorias</a>
+            </li>
+            <li>
                 <a href="{{ url('/admin/users') }}">Usuarios</a>
             </li>
         </ul>
